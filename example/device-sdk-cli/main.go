@@ -185,27 +185,44 @@ Commands:
 
 	help - show commands and comments
 
-	Init - initialize Deivce SDK 
-	
-	Discover - discover devices via UDP and then print the devices 
-						
-	Connect - connect the device(parameter#1)
+	Init - initialize Deivce SDK
+
+	Discover - discover devices via UDP and then print the devices
+
+	Connect - connect a device(parameter#1)
 		example : Connect 541530986
 
-	ConnectViaIP - connect the address(parameter#1) of device via the port(parameter#2)
+	ConnectViaIP - connect a device using the address(parameter#1) and port(parameter#2) of the device
 		example : ConnectViaIP 192.168.1.1 51211
 
-	Disconnect - disconnect the device(parameter#1) 
+	Disconnect - disconnect a device(parameter#1)
 		example : Disconnect 541530986
 
-	StartMonitoring - start event-monitoring from the device(parameter#1)
+	StartMonitoring - start event-monitoring from a device(parameter#1)
 		example : StartMonitoring 541530986
 
-	StopMonitoring - stop event-monitoring from the device(parameter#1)
+	StopMonitoring - stop event-monitoring from a device(parameter#1)
 		example : StopMonitoring 541530986
 
 	GetDeviceInfo - get device-info
 		example : GetDeviceInfo 541530986
+
+	ClearDatabase - initializes the user information and blacklist
+		 example : ClearDatabase 541530986
+
+	FactoryReset - initializes all configurations and the database
+		example : FactoryReset 541530986
+
+	RebootDevice - restarts the device
+		example : RebootDevice 541530986
+
+	LockDevice - doesn't allow user authentication by locking the device
+		example : LockDevice 541530986
+
+	UnlockDevice - allows user authentication by unlocking the device		
+		example : UnlockDevice 541530986
+
+		 
 `)
 	ShowPrompt(true)
 }
