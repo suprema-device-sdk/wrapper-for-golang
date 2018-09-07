@@ -458,7 +458,7 @@ func SetDeviceEventListener(context SdkContext, fnOnDeviceFound interface{}, fnO
 		fnOnDeviceFoundPtr = syscall.NewCallback(fnOnDeviceFound)
 	}
 	if nil != fnOnDeviceAccepted {
-		fnOnDeviceAccepted = syscall.NewCallback(fnOnDeviceAccepted)
+		fnOnDeviceAcceptedPtr = syscall.NewCallback(fnOnDeviceAccepted)
 	}
 	if nil != fnOnDeviceConnected {
 		fnOnDeviceConnectedPtr = syscall.NewCallback(fnOnDeviceConnected)
